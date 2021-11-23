@@ -1,4 +1,4 @@
-module.exports.validateOrder = (req, res, next) => {
+module.exports.validateOrders = (req, res, next) => {
     const data = req.body;
     if (data.body === "") {
         return next(new TypeError("Body should not be empty string"));
