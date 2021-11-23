@@ -6,7 +6,7 @@ const prepareUser = (body) =>
         "firstName",
         "lastName",
         "email",
-        "birthdate",
+        "birthday",
     ]);
 
 module.exports.getAllUsers = async (req, res, next) => {
