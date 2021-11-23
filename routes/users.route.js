@@ -13,6 +13,7 @@ userRouter.patch("/:id", userController.updateUser);
 userRouter.delete("/:id", userController.deleteUser);
 
 userRouter.post("/:userId/orders", validateOrders, createOrder);
+
 userRouter.get("/:userId/orders", getUserOrders);
 
 module.exports = userRouter;
