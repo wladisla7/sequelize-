@@ -39,11 +39,6 @@ module.exports = (sequelize, DataTypes) => {
       type: DataTypes.DATE,
       allowNull: false,
       validate: {
-        isAfter(value) {
-          if (value => new Date()) {
-            throw new Error('18+')
-          }
-        },
         notEmpty: true,
         isDate: true
       }
